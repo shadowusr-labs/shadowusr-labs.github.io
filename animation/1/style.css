@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #404040;
+}
+
+@font-face {
+    font-family: "Minecraft";
+    src: url('fonts/Minecraft-Bold.otf') format("opentype");
+}
+
+.viewport-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#viewport-wrapper {
+    position: relative;
+}
+
+#viewport {
+    height: 800px;
+    width: 800px;
+    z-index: 1;
+}
+
+button {
+    padding: 20px 50px;
+    font-size: 2rem;
+    margin-top: 10px;
+    max-width: 300px;
+    font-family: 'Minecraft';
+    background-color: #36b030;
+    box-shadow: 0 -4px rgba(21,108,0,.5) inset, 0 4px rgba(100,253,31,.99) inset, -4px 0 rgba(100,253,31,.5) inset, 4px 0 rgba(21,108,0,.5) inset;
+    outline: none;
+    border: none;
+    transition: all ease-in .15s;
+    cursor: pointer;
+    color: #fff;
+}
+
+button:hover {
+    background-color: rgb(49, 49, 49);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px -4px inset, rgba(255, 255, 255, 0.2) 0px 4px inset, rgba(255, 255, 255, 0.2) -4px 0px inset, rgba(0, 0, 0, 0.5) 4px 0px inset;
+    transform: scale(1.1);
+}
